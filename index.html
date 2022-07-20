@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Language Quiz</title>
+    <title>Programming Language Quiz</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
@@ -17,7 +17,7 @@
       <div class="hero-body">
         <p class="title">Language Quiz</p>
         <p class="subtitle">
-          Can you guess the top 9 languages spoken in the United States?
+          Can you guess the top 9 programming languages used?
         </p>
       </div>
     </section>
@@ -28,6 +28,7 @@
           Type your guesses below! If you get a match, it should show up
           instantly.
         </h2>
+      <!--  <h2 id="numb_guess">Number of Guesses: </h2> -->
         <input
           id="guess"
           class="input is-primary is-large"
@@ -39,64 +40,82 @@
       <section>
         <div class="tile is-ancestor">
           <div class="tile is-parent is-4">
-            <div class="tile is-child notification is-danger hidden" id="English">
-              <p class="title">English</p>
-              <p class="subtitle">Hello World</p>
+            <div class="tile is-child notification is-danger hidden" id="JavaScript">
+              <p class="title">JavaScript</p>
+              <p class="subtitle">console.log('Hello World');
+</p>
             </div>
           </div>
           <div class="tile is-parent is-4">
-            <div class="tile is-child notification is-warning hidden" id="Spanish">
-              <p class="title">Spanish</p>
-              <p class="subtitle">Hola Mundo</p>
+            <div class="tile is-child notification is-warning hidden" id="Python">
+              <p class="title">Python</p>
+              <p class="subtitle">print('Hello, world!')
+</p>
             </div>
           </div>
           <div class="tile is-parent is-4">
-            <div class="tile is-child notification is-black hidden" id="Chinese">
-              <p class="title">Chinese</p>
-              <p class="subtitle">你好世界</p>
+            <div class="tile is-child notification is-black hidden" id="SQL">
+              <p class="title">SQL</p>
+              <p class="subtitle">CREATE TABLE helloworld (phrase TEXT);
+.tables</p>
             </div>
           </div>
         </div>
         <div class="tile is-ancestor">
           <div class="tile is-parent">
-            <div class="tile is-child notification is-primary hidden" id="Tagalog">
-              <p class="title">Tagalog</p>
-              <p class="subtitle">Kamusta sa Mundo</p>
+            <div class="tile is-child notification is-primary hidden" id="Java">
+              <p class="title">Java</p>
+              <p class="subtitle">class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!"); 
+    }
+}</p>
             </div>
           </div>
           <div class="tile is-parent is-4">
             <div
               class="tile is-child notification is-info hidden"
-              id="Vietnamese"
+              id="TypeScript"
             >
-              <p class="title">Vietnamese</p>
-              <p class="subtitle">Chào thế giới</p>
+              <p class="title">TypeScript </p>
+              <p class="subtitle">let message: string = 'Hello, World!';
+console.log(message);</p>
             </div>
           </div>
           <div class="tile is-parent is-4">
-            <div class="tile is-child notification is-primary hidden" id="Arabic">
-              <p class="title">Arabic</p>
-              <p class="subtitle">مرحبا بالعالم</p>
+            <div class="tile is-child notification is-primary hidden" id="CS">
+              <p class="title">C#</p>
+              <p class="subtitle">Console.WriteLine("Hello World!");
+</p>
             </div>
           </div>
         </div>
         <div class="tile is-ancestor">
           <div class="tile is-parent is-4">
-            <div class="tile is-child notification is-link hidden" id="French">
-              <p class="title">French</p>
-              <p class="subtitle">Bonjour le monde</p>
+            <div class="tile is-child notification is-link hidden" id="CS2">
+              <p class="title">C</p>
+              <p class="subtitle">#include <stdio.h>
+int main() {
+   printf("Hello, World!");
+   return 0;
+}</p>
             </div>
           </div>
           <div class="tile is-parent is-4">
-            <div class="tile is-child notification is-black hidden" id="Korean">
-              <p class="title">Korean</p>
-              <p class="subtitle">안녕하세요 세계</p>
+            <div class="tile is-child notification is-black hidden" id="CS3">
+              <p class="title">C++</p>
+              <p class="subtitle">#include <iostream>
+
+int main() {
+    std::cout << "Hello World!";
+    return 0;
+}</p>
             </div>
           </div>
           <div class="tile is-parent is-4">
-            <div class="tile is-child notification is-warning hidden" id="Russian">
-              <p class="title">Russian</p>
-              <p class="subtitle">Привет мир</p>
+            <div class="tile is-child notification is-warning hidden" id="PHP">
+              <p class="title">PHP</p>
+              <p class="subtitle">< ? php echo "Hello World!"; ?> </p>
             </div>
           </div>
         </div>
@@ -108,9 +127,9 @@
         <p>
           Source:
           <a
-            href="https://www.accreditedlanguage.com/languages/the-10-most-popular-languages-in-the-us/"
-            >Accredited Language Services</a
-          >, translations of "Hello World" prodived by Google Translate
+            href="https://insights.stackoverflow.com/survey/2021?_ga=2.115807297.675239690.1628167975-2066421306.1628167975"
+            >Stack Overflow</a
+          >, quiz created by Shangwe Nyota
         </p>
       </div>
     </footer>
